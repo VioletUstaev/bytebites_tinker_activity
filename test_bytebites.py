@@ -49,4 +49,3 @@ if __name__ == "__main__":
     unittest.main()
 
 
-# unittest was used because pytest was not able to install in the Python environment
