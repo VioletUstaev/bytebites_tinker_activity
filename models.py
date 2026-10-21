@@ -11,6 +11,9 @@ class MenuCategory:
     def filter_items(self, items: list[MenuItem]) -> list[MenuItem]:
         return [item for item in items if item.category == self]
 
+    def sort_items_by_popularity(self, items: list[MenuItem]) -> list[MenuItem]:
+        return sorted(items, key=lambda item: item.popularity_rating, reverse=True)
+
 
 @dataclass
 class MenuItem:
@@ -38,4 +41,4 @@ class Customer:
     purchase_history: list[Transaction] = field(default_factory=list)
 
 
-# Suggestions and change details: removed the add_transaction method and docstrings because they are not shown in the UML.
+# Suggestions and change details: added popularity-descending sorting to MenuCategory to match the updated UML.

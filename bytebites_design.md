@@ -15,6 +15,7 @@ classDiagram
     class MenuCategory {
         +name: str
         +filter_items(items: list~MenuItem~) list~MenuItem~
+        +sort_items_by_popularity(items: list~MenuItem~) list~MenuItem~
     }
 
     class Transaction {
@@ -28,4 +29,4 @@ classDiagram
     MenuCategory "1" --> "0..*" MenuItem : categorizes
 ```
 
-<!-- Suggestions and change details: aligned the diagram with the four classes and feature descriptions, removed unsupported identifiers and transaction details, corrected class references, and included category filtering. -->
+<!-- Suggestions and change details: added popularity-descending menu item sorting to MenuCategory. -->

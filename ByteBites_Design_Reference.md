@@ -9,6 +9,10 @@ Do not add authentication logic, a database layer, or any features not described
 in the spec.
 
 ## Behavioral Instructions
-<!-- Write a short set of instructions guiding how your AI assistant should behave 
-when helping with this project — for example, which classes to stay within, 
-what complexity to avoid, or any preferences for how suggestions are structured. -->
+Make sure to stay in the four classes given:
+Customer, MenuItem, MenuCategory, Transaction
+Dont add unnessary information
+Don't get rid of anything unless told otherwise
+Make sure attributes match the decription of the feature request
+Avoid complex solutions
+Suggestions and Change details should be added as a comment at the end of any edits.
